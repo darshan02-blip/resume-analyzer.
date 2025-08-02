@@ -1,0 +1,27 @@
+/* Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Glassmorphism effect */
+.glass-card {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Button hover effect */
+.btn-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
